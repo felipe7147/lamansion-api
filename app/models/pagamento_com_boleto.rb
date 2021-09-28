@@ -1,0 +1,2 @@
+class PagamentoComBoleto < ApplicationRecord
+end

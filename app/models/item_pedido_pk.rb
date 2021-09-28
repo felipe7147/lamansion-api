@@ -1,0 +1,2 @@
+class ItemPedidoPk < ApplicationRecord
+end

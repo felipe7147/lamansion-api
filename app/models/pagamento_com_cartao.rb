@@ -1,0 +1,2 @@
+class PagamentoComCartao < ApplicationRecord
+end
