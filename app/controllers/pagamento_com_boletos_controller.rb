@@ -5,7 +5,7 @@ class PagamentoComBoletosController < ApplicationController
   def index
     @pagamento_com_boletos = PagamentoComBoleto.all
 
-    render json: @pagamento_com_boletos
+    render json: @pagamento_com_boletos, only: [:id,:dataPagamento, :dataVencimento]
   end
 
   # GET /pagamento_com_boletos/1

@@ -5,7 +5,7 @@ class PagamentosController < ApplicationController
   def index
     @pagamentos = Pagamento.all
 
-    render json: @pagamentos
+    render json: @pagamentos, only: [:id,:estado]
   end
 
   # GET /pagamentos/1

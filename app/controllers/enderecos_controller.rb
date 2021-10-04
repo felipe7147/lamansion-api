@@ -5,7 +5,7 @@ class EnderecosController < ApplicationController
   def index
     @enderecos = Endereco.all
 
-    render json: @enderecos
+    render json: @enderecos, only: [:id,:logradouro, :numero, :complemento, :bairro, :cep]
   end
 
   # GET /enderecos/1

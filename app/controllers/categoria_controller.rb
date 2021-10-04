@@ -5,7 +5,7 @@ class CategoriaController < ApplicationController
   def index
     @categoria = Categorium.all
 
-    render json: @categoria
+    render json: @categoria, only: [:id, :nome]
   end
 
   # GET /categoria/1

@@ -5,7 +5,7 @@ class PedidosController < ApplicationController
   def index
     @pedidos = Pedido.all
 
-    render json: @pedidos
+    render json: @pedidos, only: [:id,:instante]
   end
 
   # GET /pedidos/1

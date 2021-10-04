@@ -5,7 +5,7 @@ class ItemPedidosController < ApplicationController
   def index
     @item_pedidos = ItemPedido.all
 
-    render json: @item_pedidos
+    render json: @item_pedidos, only: [:id,:desconto, :quantidade, :preco]
   end
 
   # GET /item_pedidos/1

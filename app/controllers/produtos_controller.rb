@@ -5,7 +5,7 @@ class ProdutosController < ApplicationController
   def index
     @produtos = Produto.all
 
-    render json: @produtos
+    render json: @produtos, only: [:id,:nome, :preco]
   end
 
   # GET /produtos/1
